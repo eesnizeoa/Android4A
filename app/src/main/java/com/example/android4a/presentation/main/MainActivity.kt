@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.Observer
 import com.example.android4a.R
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.android.synthetic.main.activity_main.*
 import org.koin.android.ext.android.inject
 
@@ -15,11 +16,22 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        main_button.setOnClickListener{
-            mainViewModel.onClickedIncrement("")
-        }
-        mainViewModel.counter.observe(this, Observer{
-            value -> main_text.text = value.toString()
+        mainViewModel.loginLiveData.observe(this, Observer {
+            when(it){
+                is LoginSuccess -> {
+                    //TODO Navigate
+                }
+                LoginError -> {
+                    MaterialAlertDialogBuilder(this)
+                        .setTitle("Erreur")
+                        .setMessage("Compte Inconnu")
+                        .setPositiveButton("OK"){ dialog, which -> dialog.dismiss()}
+                        .show()
+                }
+            }
         })
+        login_button.setOnClickListener{
+            mainViewModel.onClickedLogin(login_edit.text.toString().trim(),password_edit.text.toString().trim())
+        }
     }
 }
