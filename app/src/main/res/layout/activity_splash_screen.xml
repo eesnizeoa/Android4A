@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/pokeSplash"
+    android:background="@drawable/pokesplash"
     tools:context=".presentation.main.SplashScreen">
 
     <ImageView
@@ -12,7 +12,7 @@
         android:layout_width="101dp"
         android:layout_height="78dp"
         android:layout_centerInParent="true"
-        android:src="@drawable/pokeOuvre"
+        android:src="@drawable/pokeouvre"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
