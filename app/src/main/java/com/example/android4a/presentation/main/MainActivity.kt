@@ -9,6 +9,8 @@ import com.example.android4a.R
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.android.synthetic.main.activity_main.*
 import org.koin.android.ext.android.inject
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         mainViewModel.loginLiveData.observe(this, Observer {
             when(it){
                 is LoginSuccess -> {
-                    val intent: Intent = Intent(this,ListAppActivity::class.java)
+                    val intent: Intent = Intent(this,PokemonMainActivity::class.java)
                     startActivity(intent)
                 }
                 LoginError -> {

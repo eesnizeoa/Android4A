@@ -4,21 +4,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".presentation.main.PokemonMainActivity">
 
-
-    <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/title_list_layout"
+    <TextView
+        android:id="@+id/detail_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Liste Suggérée"
-        app:layout_constraintVertical_chainStyle="packed"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:text="@+string/detail_text_description"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/password_input_layout">
-
-    </com.google.android.material.textview.MaterialTextView>
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

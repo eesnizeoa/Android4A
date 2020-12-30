@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.android4a">
 
     <application
@@ -13,7 +14,6 @@
         <activity android:name=".presentation.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -22,11 +22,18 @@
                 <action android:name="android.intent.action.CREATEACCOUNT" />
             </intent-filter>
         </activity>
-        <activity android:name=".presentation.main.ListAppActivity">
+        <activity android:name=".presentation.main.DetailActivity">
             <intent-filter>
-                <action android:name="android.intent.action.LISTAPP" />
+                <action android:name="android.intent.action.DETAIL" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".presentation.main.PokemonMainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.POKEMONMAIN" />
             </intent-filter>
         </activity>
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

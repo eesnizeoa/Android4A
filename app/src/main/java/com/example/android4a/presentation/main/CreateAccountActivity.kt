@@ -24,11 +24,6 @@ class CreateAccountActivity: AppCompatActivity() {
         createaccountViewModel.registerLiveData.observe(this, androidx.lifecycle.Observer {
             when(it){
                 is RegisterSuccess -> {
-                    //TODO
-                    //TODO insérer valeur dans table
-
-                    //TODO insérer valeur dans table
-                    //TODO
                     val intent: Intent = Intent(this,MainActivity::class.java)
                     startActivity(intent)
                 }
