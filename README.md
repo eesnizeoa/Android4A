@@ -20,29 +20,28 @@ Cette application permet de visualiser une liste de pokemon après identificatio
 ## Fonctionnalités  
 Lorsque l'application s'ouvre, un SplashScreen apparaît. Une page de login apparaît. Si vous venez de télécharger l'app vous n'avez pas encore de compte. Essayez de cliquer sur Login, vous verrez un message d'erreur.
 <p align="center">
-<img src="Android4A/.PNG" width="200" height="350" />  
+<img src="Images/Capture1.PNG" width="200" height="350" />  
 </p>
 <p align="center">
-<img src="Android4A/.PNG" width="200" height="350" />  
+<img src="Images/Capture2.PNG" width="200" height="350" />  
 </p>
 <p align="center">
-<img src="Android4A/.PNG" width="200" height="350" />  
+<img src="Images/Capture3.PNG" width="200" height="350" />  
 </p>
 <p align="center">
-<img src="Android4A/.PNG" width="200" height="350" />  
-</p>
-<p align="center">
-<img src="Android4A/.PNG" width="200" height="350" />  
-</p>
-<p align="center">
-<img src="Android4A/.PNG" width="200" height="350" />  
-</p>
-<p align="center">
-<img src="Android4A/.PNG" width="200" height="350" />  
+<img src="Images/Capture4.PNG" width="200" height="350" />  
 </p>
 Cliquez sur Create Account et vous accédez à une nouvelle activité. Sur cette activité, vous choisissez un identifiant et un mot de passe, puis cliquez sur Register.
-cela vous ramène à la page de login. Cette fois-ci si vous entrez vos identifiant et mot de passe, cela marchera. Une liste de pokemons apparaîtra alors. Cliquez sur le logo android et vous aurez une page avec les infos sur l'élément choisi.
+cela vous ramène à la page de login. Cette fois-ci si vous entrez vos identifiant et mot de passe, cela marchera.
+<p align="center">
+<img src="Images/Capture5.PNG" width="200" height="350" />  
+</p>
+Une liste de pokemons apparaîtra alors. Cliquez sur le logo android et vous aurez une page avec les infos sur l'élément choisi.
 Lorsque l'on clique sur l'icone android d'un item, cela ouvre une nouvelle fenêtre qui charge le nom et l'url voulus.  
 <p align="center">
-<img src="myProjectCopy_Screen/Detail.PNG" width="200" height="350" />
-</p>  
+<img src="Images/Capture6.PNG" width="200" height="350" />  
+</p>
+<p align="center">
+<img src="Images/Capture7.PNG" width="200" height="350" />  
+</p>
+
