@@ -1,4 +1,4 @@
-package com.examp
+package com.example
 
 import com.example.android4a.presentation.main.LoginError
 import com.example.android4a.presentation.main.LoginStatus

@@ -4,7 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.Observer
-import com.examp.MainViewModel
+import com.example.MainViewModel
 import com.example.android4a.R
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.android.synthetic.main.activity_main.*
@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
         login_button.setOnClickListener{
             mainViewModel.onClickedLogin(login_edit.text.toString().trim(),password_edit.text.toString().trim())
         }
-        register_button.setOnClickListener{
+        create_account_button.setOnClickListener{
             //setContentView(R.layout.create_account)
             val intent: Intent = Intent(this,CreateAccountActivity::class.java)
             startActivity(intent)
