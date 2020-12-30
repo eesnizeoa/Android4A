@@ -9,14 +9,15 @@
 
     <ImageView
         android:id="@+id/image_icon"
-        android:layout_width="101dp"
-        android:layout_height="78dp"
+        android:layout_width="400dp"
+        android:layout_height="381dp"
         android:layout_centerInParent="true"
-        android:src="@drawable/pokeouvre"
+        android:src="@drawable/imageonlinetransparentimage"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.975" />
+        app:layout_constraintVertical_bias="0.405" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
