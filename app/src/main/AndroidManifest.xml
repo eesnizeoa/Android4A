@@ -17,6 +17,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".presentation.main.CreateAccountActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATEACCOUNT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".presentation.main.ListAppActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.LISTAPP" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
